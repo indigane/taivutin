@@ -11,10 +11,7 @@ words = []
 with open('data/sanapalat.txt', 'r', newline='\n', encoding='utf-8') as word_file:
   line_number = 1
   for line in word_file:
-    try:
-      partial_word, inflection_index, inflection_count = line.rstrip().split('\t')
-    except:
-      import pdb; pdb.set_trace()
+    partial_word, inflection_index, inflection_count = line.rstrip().split('\t')
     words.append((partial_word, int(inflection_index), int(inflection_count)))
     total_count += int(inflection_count)
     line_number += 1
