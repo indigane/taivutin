@@ -10,11 +10,9 @@ import sys
 
 DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
 
-WORDLISTS = {
-  'wiktionary': ('sanapalat.txt', 'taivutuspalat.txt'),
-  'kotus': ('kotus-sanapalat.txt', 'kotus-taivutuspalat.txt'),
-}
-DEFAULT_WORDLIST = 'wiktionary'
+# In order of preference; the first one is the default.
+WORDLISTS = ['kotuskarsittu', 'kotusfull', 'wikisanakirja']
+DEFAULT_WORDLIST = WORDLISTS[0]
 
 
 class Wordlist:
@@ -48,8 +46,7 @@ class Wordlist:
 
 
 def load_wordlist(name):
-  words_filename, inflections_filename = WORDLISTS[name]
-  return Wordlist(os.path.join(DATA_DIR, words_filename), os.path.join(DATA_DIR, inflections_filename))
+  return Wordlist(os.path.join(DATA_DIR, name + '-sanapalat.txt'), os.path.join(DATA_DIR, name + '-taivutuspalat.txt'))
 
 
 def generate(wordlist, word_count):
@@ -59,7 +56,7 @@ def generate(wordlist, word_count):
 def main():
   parser = argparse.ArgumentParser(description='Suomen kielen sanoja taivuttava salasanageneraattori.')
   parser.add_argument('count', nargs='?', type=int, default=3, help='sanojen määrä (oletus 3)')
-  parser.add_argument('-w', '--wordlist', choices=sorted(WORDLISTS), default=DEFAULT_WORDLIST,
+  parser.add_argument('-w', '--wordlist', choices=WORDLISTS, default=DEFAULT_WORDLIST,
                       help='sanalista (oletus %(default)s)')
   args = parser.parse_args()
   try:
