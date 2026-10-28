@@ -99,37 +99,109 @@ async function loadWordlist(name) {
 
 // Page wiring. Skipped when the script is loaded outside a browser.
 if (typeof document !== 'undefined') {
+  const SETTINGS_KEY = 'taivutin';
+  const LIMITS = { words: [1, 12], lines: [1, 20] };
+  const settings = { words: 3, lines: 5, wordlist: DEFAULT_WORDLIST };
+  try {
+    Object.assign(settings, JSON.parse(localStorage.getItem(SETTINGS_KEY)) || {});
+  } catch (error) { /* ignore unreadable settings */ }
+  for (const key of Object.keys(LIMITS)) settings[key] = clamp(key, settings[key]);
+  if (!WORDLISTS[settings.wordlist]) settings.wordlist = DEFAULT_WORDLIST;
+
+  function clamp(key, value) {
+    const [min, max] = LIMITS[key];
+    return Math.max(min, Math.min(max, Math.floor(Number(value)) || min));
+  }
+
+  function saveSettings() {
+    try {
+      localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+    } catch (error) { /* ignore, e.g. storage disabled */ }
+  }
+
   const form = document.getElementById('form');
-  const countInput = document.getElementById('count');
-  const wordlistSelect = document.getElementById('wordlist');
-  const passwordOutput = document.getElementById('password');
-  const copyButton = document.getElementById('copy');
+  const wordlistFieldset = document.getElementById('wordlist');
+  const passwordList = document.getElementById('passwords');
   const entropyText = document.getElementById('entropy');
   const statusText = document.getElementById('status');
 
   for (const [key, wordlist] of Object.entries(WORDLISTS)) {
-    const option = document.createElement('option');
-    option.value = key;
-    option.textContent = wordlist.name;
-    option.selected = key === DEFAULT_WORDLIST;
-    wordlistSelect.appendChild(option);
+    const label = document.createElement('label');
+    const input = document.createElement('input');
+    input.type = 'radio';
+    input.name = 'wordlist';
+    input.value = key;
+    input.checked = key === settings.wordlist;
+    input.addEventListener('change', () => {
+      settings.wordlist = key;
+      saveSettings();
+      run();
+    });
+    label.append(input, document.createTextNode(wordlist.name));
+    wordlistFieldset.appendChild(label);
+  }
+
+  for (const stepper of document.querySelectorAll('.stepper')) {
+    const key = stepper.dataset.setting;
+    const valueOutput = stepper.querySelector('[data-value]');
+    const buttons = stepper.querySelectorAll('[data-step]');
+    const render = () => {
+      valueOutput.textContent = settings[key];
+      for (const button of buttons) {
+        const next = settings[key] + Number(button.dataset.step);
+        button.disabled = next < LIMITS[key][0] || next > LIMITS[key][1];
+      }
+    };
+    for (const button of buttons) {
+      button.addEventListener('click', () => {
+        settings[key] = clamp(key, settings[key] + Number(button.dataset.step));
+        saveSettings();
+        render();
+        run();
+      });
+    }
+    render();
+  }
+
+  function createCopyButton(getText) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'copy';
+    button.title = 'Kopioi';
+    button.setAttribute('aria-label', 'Kopioi');
+    button.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>';
+    button.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(getText());
+        button.classList.add('copied');
+        button.title = 'Kopioitu';
+      } catch (error) {
+        button.title = 'Kopiointi epäonnistui';
+      }
+      setTimeout(() => { button.classList.remove('copied'); button.title = 'Kopioi'; }, 1500);
+    });
+    return button;
   }
 
   async function run() {
-    const wordCount = Math.max(1, Math.min(32, Math.floor(Number(countInput.value)) || 3));
-    countInput.value = wordCount;
-    const name = wordlistSelect.value;
-    copyButton.hidden = true;
-    entropyText.textContent = '';
+    const name = settings.wordlist;
     if (!loadedWordlists[name]) {
       statusText.textContent = 'Ladataan sanalistaa…';
     }
     try {
       const wordlist = await loadWordlist(name);
-      passwordOutput.textContent = generate(wordlist, wordCount);
-      entropyText.textContent = (wordCount * wordlist.bitsPerWord).toFixed(1) + ' bittiä (' +
+      if (name !== settings.wordlist) return; // another list was chosen meanwhile
+      passwordList.replaceChildren();
+      for (let i = 0; i < settings.lines; i++) {
+        const item = document.createElement('li');
+        const text = document.createElement('span');
+        text.className = 'password';
+        text.textContent = generate(wordlist, settings.words);
+        item.append(text, createCopyButton(() => text.textContent));
+        passwordList.appendChild(item);
+      }
+      entropyText.textContent = (settings.words * wordlist.bitsPerWord).toFixed(1) + ' bittiä salasanaa kohti (' +
         wordlist.totalCount.toLocaleString('fi-FI') + ' sanamuotoa)';
-      copyButton.hidden = false;
       statusText.textContent = '';
     } catch (error) {
       statusText.textContent = 'Sanalistan lataus epäonnistui: ' + error.message;
@@ -139,17 +211,6 @@ if (typeof document !== 'undefined') {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
     run();
-  });
-  wordlistSelect.addEventListener('change', run);
-
-  copyButton.addEventListener('click', async () => {
-    try {
-      await navigator.clipboard.writeText(passwordOutput.textContent);
-      copyButton.textContent = 'Kopioitu';
-    } catch (error) {
-      copyButton.textContent = 'Kopiointi epäonnistui';
-    }
-    setTimeout(() => { copyButton.textContent = 'Kopioi'; }, 1500);
   });
 
   run();

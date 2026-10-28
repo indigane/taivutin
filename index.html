@@ -12,23 +12,27 @@
     <p>Suomen kielen sanoja taivuttava salasanageneraattori. Salasanat arvotaan selaimessa, eikä niitä lähetetä minnekään.</p>
 
     <form id="form">
-      <label>
-        Sanojen määrä
-        <input type="number" id="count" min="1" max="32" value="3">
-      </label>
-      <label>
-        Sanalista
-        <select id="wordlist"></select>
-      </label>
-      <button type="submit">Luo uusi</button>
+      <fieldset class="segmented" id="wordlist">
+        <legend>Sanalista</legend>
+      </fieldset>
+      <div class="stepper" data-setting="words">
+        <span class="stepper-label" id="words-label">Sanoja</span>
+        <button type="button" data-step="-1" aria-label="Vähemmän sanoja">−</button>
+        <output aria-labelledby="words-label" data-value></output>
+        <button type="button" data-step="1" aria-label="Enemmän sanoja">+</button>
+      </div>
+      <div class="stepper" data-setting="lines">
+        <span class="stepper-label" id="lines-label">Salasanoja</span>
+        <button type="button" data-step="-1" aria-label="Vähemmän salasanoja">−</button>
+        <output aria-labelledby="lines-label" data-value></output>
+        <button type="button" data-step="1" aria-label="Enemmän salasanoja">+</button>
+      </div>
+      <button type="submit" class="primary">Luo uudet</button>
     </form>
 
-    <output id="password" for="count wordlist"></output>
-    <p class="row">
-      <button type="button" id="copy" hidden>Kopioi</button>
-      <span id="entropy"></span>
-    </p>
-    <p id="status" role="status"></p>
+    <ul id="passwords" class="passwords"></ul>
+    <p id="entropy" class="muted"></p>
+    <p id="status" class="muted" role="status"></p>
 
     <footer>
       <p>Komentorivisovellus ja lähdekoodi: <a href="https://github.com/indigane/taivutin">github.com/indigane/taivutin</a></p>

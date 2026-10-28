@@ -2,6 +2,9 @@
   color-scheme: light dark;
   font-family: system-ui, sans-serif;
   line-height: 1.5;
+  --border: color-mix(in srgb, currentColor 30%, transparent);
+  --subtle: color-mix(in srgb, currentColor 8%, transparent);
+  --accent: color-mix(in srgb, currentColor 16%, transparent);
 }
 
 body {
@@ -20,52 +23,182 @@ h1 {
   margin-top: 0;
 }
 
+button {
+  font: inherit;
+  color: inherit;
+  background: var(--subtle);
+  border: 1px solid var(--border);
+  border-radius: 0.4rem;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: var(--accent);
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+button.primary {
+  font-weight: 600;
+}
+
 form {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1rem 1.25rem;
   align-items: end;
 }
 
-label {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  font-size: 0.9rem;
+/* Wordlist switch: radio buttons styled as a segmented button group. */
+.segmented {
+  display: inline-flex;
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
-input, select, button {
-  font: inherit;
-  padding: 0.4rem 0.6rem;
-}
-
-input[type="number"] {
-  width: 5rem;
-}
-
-output {
+.segmented legend,
+.stepper-label {
   display: block;
+  font-size: 0.85rem;
+  padding: 0;
+  margin-bottom: 0.25rem;
+  opacity: 0.8;
+}
+
+.segmented label {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--border);
+  margin-left: -1px;
+  cursor: pointer;
+  user-select: none;
+  background: var(--subtle);
+}
+
+.segmented label:first-of-type {
+  border-radius: 0.4rem 0 0 0.4rem;
+  margin-left: 0;
+}
+
+.segmented label:last-of-type {
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+
+.segmented label:hover {
+  background: var(--accent);
+}
+
+.segmented input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.segmented label:has(input:checked) {
+  background: CanvasText;
+  color: Canvas;
+  border-color: CanvasText;
+  position: relative;
+}
+
+.segmented label:has(input:focus-visible) {
+  outline: 2px solid AccentColor;
+  outline-offset: 2px;
+}
+
+/* Steppers */
+.stepper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+}
+
+.stepper .stepper-label {
+  grid-column: 1 / -1;
+}
+
+.stepper button {
+  width: 2.4rem;
+  padding: 0.4rem 0;
+}
+
+.stepper button[data-step="-1"] {
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+
+.stepper button[data-step="1"] {
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+
+.stepper output {
+  min-width: 2.4rem;
+  text-align: center;
+  padding: 0.4rem 0.3rem;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Generated passwords */
+.passwords {
+  list-style: none;
+  padding: 0;
   margin: 1.5rem 0 0.5rem;
-  padding: 1rem;
-  font-family: ui-monospace, monospace;
-  font-size: 1.4rem;
-  overflow-wrap: anywhere;
-  border: 1px solid color-mix(in srgb, currentColor 30%, transparent);
+  border: 1px solid var(--border);
   border-radius: 0.5rem;
-  min-height: 1.5em;
+  overflow: hidden;
+}
+
+.passwords:empty {
+  display: none;
+}
+
+.passwords li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+
+.passwords li + li {
+  border-top: 1px solid var(--border);
+}
+
+.password {
+  flex: 1;
+  font-family: ui-monospace, monospace;
+  font-size: 1.15rem;
+  overflow-wrap: anywhere;
   user-select: all;
 }
 
-.row {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  margin: 0;
-  min-height: 2.5rem;
+button.copy {
+  background: none;
+  border: 0;
+  padding: 0.4rem;
+  display: inline-flex;
+  opacity: 0.6;
 }
 
-#entropy, #status {
+button.copy:hover {
+  opacity: 1;
+  background: var(--subtle);
+}
+
+button.copy.copied {
+  opacity: 1;
+  color: #2a9d4f;
+}
+
+.muted {
   opacity: 0.75;
+  margin: 0.25rem 0;
 }
 
 footer {
