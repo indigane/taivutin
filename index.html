@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taivutin – salasanageneraattori</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Taivutin</h1>
+    <p>Suomen kielen sanoja taivuttava salasanageneraattori. Salasanat arvotaan selaimessa, eikä niitä lähetetä minnekään.</p>
+
+    <form id="form">
+      <label>
+        Sanojen määrä
+        <input type="number" id="count" min="1" max="32" value="3">
+      </label>
+      <label>
+        Sanalista
+        <select id="wordlist"></select>
+      </label>
+      <button type="submit">Luo uusi</button>
+    </form>
+
+    <output id="password" for="count wordlist"></output>
+    <p class="row">
+      <button type="button" id="copy" hidden>Kopioi</button>
+      <span id="entropy"></span>
+    </p>
+    <p id="status" role="status"></p>
+
+    <footer>
+      <p>Komentorivisovellus ja lähdekoodi: <a href="https://github.com/indigane/taivutin">github.com/indigane/taivutin</a></p>
+      <h2>Lisenssit</h2>
+      <p><strong>Wikisanakirja:</strong> sanalista on koottu englanninkielisen <a href="https://en.wiktionary.org/">Wikisanakirjan</a> suomenkielisistä sanoista ja niiden taivutuksista. Lisenssi <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>.</p>
+      <p><strong>Kotus:</strong> sanalista on taivutettu <a href="https://kaino.kotus.fi/sanat/nykysuomi/">Kotimaisten kielten tutkimuskeskuksen nykysuomen sanalistasta</a> (versio 1, 2006, © Kotimaisten kielten tutkimuskeskus) Voikko-projektin taivutussäännöillä. Sanalistan lisenssit: GNU LGPL, EUPL v.1.1 ja <a href="https://creativecommons.org/licenses/by/3.0/deed.fi">CC BY 3.0</a>.</p>
+    </footer>
+  </main>
+  <script src="taivutin.js"></script>
+</body>
+</html>
