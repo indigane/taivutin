@@ -92,10 +92,8 @@ tua	un	tui	tuisi	tukoon	tunut	uttiin
 ti	din	tia	diksi	tina	dissa	dista	tiin	dilla	dilta	dille	ditta	dit	tien	teja	deiksi	teina	deissa	deista	teihin	deilla	deilta	deille	deitta	dein	den	tea	deksi	tena	dessa	desta	teen	della	delta	delle	detta	det
 s	ksen	kseksi	ksena	ksessa	ksesta	kseen	ksella	kselta	kselle	ksetta	kset	sten	ksien	ksia	ksiksi	ksina	ksissa	ksista	ksiin	ksilla	ksilta	ksille	ksitta	ksin
 ku	un	kua	uksi	kuna	ussa	usta	kuun	ulla	ulta	ulle	utta	ut	kujen	kuja	uiksi	kuina	uissa	uista	kuihin	uilla	uilta	uille	uitta	uin
-i	in	ia	iä	iksi	ina	inä	issa	issä	ista	istä	iin	illa	illä	ilta	iltä	ille	itta	ittä	it	ien	eja	ejä	eiksi	eina	einä	eissa	eissä	eista	eistä	eihin	eilla	eillä	eilta	eiltä	eille	eitta	eittä	ein	en	ea	eä	eksi	ena	enä	essa	essä	esta	estä	een	ella	ellä	elta	eltä	elle	etta	että	et
 ta	an	si	isi	tkoon	nnut	ttiin
 n	man	nta	maksi	mana	massa	masta	maan	malla	malta	malle	matta	mat	mien	nten	mia	miksi	mina	missa	mista	miin	milla	milta	mille	mitta	min
-nen	sen	sta	stä	seksi	sena	senä	sessa	sessä	sesta	sestä	seen	sella	sellä	selta	seltä	selle	setta	settä	set	sten	sien	sia	siä	siksi	sina	sinä	sissa	sissä	sista	sistä	siin	silla	sillä	silta	siltä	sille	sitta	sittä	sin
 pi	man	massa	masta	paan	malla	malta	malle	matta	mat	pien	pain	pia	miksi	pina	missa	mista	piin	milla	milta	mille	mitta	min
 ta	nen	ni	nisi	tkoon	nnut	ttiin
 tu	un	tua	uksi	tuna	ussa	usta	tuun	ulla	ulta	ulle	utta	ut	tujen	tuja	uiksi	tuina	uissa	uista	tuihin	uilla	uilta	uille	uitta	uin
@@ -111,15 +109,12 @@ i	in	ia	iksi	ina	issa	ista	iin	illa	ilta	ille	itta	it	ien	eja	en	ea	eksi	ena	ess
 to	on	toa	oksi	tona	ossa	osta	toon	olla	olta	olle	otta	ot	tojen	toja	oiksi	toina	oissa	oista	toihin	oilla	oilta	oille	oitta	oin
 s	ksen	kseksi	ksena	ksessa	ksesta	kseen	ksella	kselta	kselle	ksetta	kset	ksien	ksia	ksiksi	ksina	ksissa	ksista	ksiin	ksilla	ksilta	ksille	ksitta	ksin
 aa	i	aisi	akoon	anut	ettiin
-s	ksen	sta	stä	kseksi	ksena	ksenä	ksessa	ksessä	ksesta	ksestä	kseen	ksella	ksellä	kselta	kseltä	kselle	ksetta	ksettä	kset	sten	ksien	ksia	ksiä	ksiksi	ksina	ksinä	ksissa	ksissä	ksista	ksistä	ksiin	ksilla	ksillä	ksilta	ksiltä	ksille	ksitta	ksittä	ksin
-s	den	tta	ttä	deksi	tena	tenä	dessa	dessä	desta	destä	teen	della	dellä	delta	deltä	delle	detta	dettä	det	ksien	ksia	ksiä	ksiksi	ksina	ksinä	ksissa	ksissä	ksista	ksistä	ksiin	ksilla	ksillä	ksilta	ksiltä	ksille	ksitta	ksittä	ksin
+s	den	ttä	deksi	tenä	dessä	destä	teen	dellä	deltä	delle	dettä	det	ksien	ksiä	ksiksi	ksinä	ksissä	ksistä	ksiin	ksillä	ksiltä	ksille	ksittä	ksin
 a	i	isi	koon	nut	ttiin
 a	i	isi	koon	nut
-nen	sen	seksi	sena	senä	sessa	sessä	sesta	sestä	seen	sella	sellä	selta	seltä	selle	setta	settä	set	sten	sien	sia	siä	siksi	sina	sinä	sissa	sissä	sista	sistä	siin	silla	sillä	silta	siltä	sille	sitta	sittä	sin
 a	an	aa	aksi	ana	assa	asta	aan	alla	alta	alle	atta	at	ojen	ain	oja	oiksi	oina	oissa	oista	oihin	oilla	oilta	oille	oitta	oin	ien	ia	iksi	ina	issa	ista	iin	illa	ilta	ille	itta	in	ata	oiden	oitten
 a	an	aa	ata	aksi	ana	assa	asta	aan	alla	alta	alle	atta	at	iden	itten	ain	ita	iksi	ina	issa	ista	isiin	ihin	illa	ilta	ille	itta	in
 nella	telen	teli	telisi	nelkoon	nellut	neltiin
-ti	in	tia	tiä	iksi	tina	tinä	issa	issä	ista	istä	tiin	illa	illä	ilta	iltä	ille	itta	ittä	it	tien	teja	tejä	eiksi	teina	teinä	eissa	eissä	eista	eistä	teihin	eilla	eillä	eilta	eiltä	eille	eitta	eittä	ein	en	tea	teä	eksi	tena	tenä	essa	essä	esta	estä	teen	ella	ellä	elta	eltä	elle	etta	että	et
 ta	tsen	tsi	tsisi	tkoon	nnut	ttiin
 s	aksi	ana	assa	asta	aseen	alla	alta	alle	atta	at	iden	itten	iksi	ina	issa	ista	isiin	ihin	illa	ilta	ille	itta
 taa	nan	toi	taisi	takoon	tanut	nettiin
@@ -161,8 +156,7 @@ rin	timen	rinta	timeksi	timena	timessa	timesta	timeen	timella	timelta	timelle	ti
 tua	run	tui	tuisi	tukoon	tunut	ruttiin
 pa	an	paa	aksi	pana	assa	asta	paan	alla	alta	alle	atta	at	pojen	pain	poja	oiksi	poina	oissa	oista	poihin	oilla	oilta	oille	oitta	oin
 	a	na	un	jen	ja	ina	ihin
-	n	a	ä	ksi	na	nä	ssa	ssä	sta	stä	yn	lla	llä	lta	ltä	lle	tta	ttä	t	jen	ja	jä	iksi	ina	inä	issa	issä	ista	istä	ihin	illa	illä	ilta	iltä	ille	itta	ittä	in
-	in	ia	iä	iksi	ina	inä	issa	issä	ista	istä	iin	illa	illä	ilta	iltä	ille	itta	ittä	it	ien	eiden	eitten	eita	eitä	eja	ejä	eiksi	eina	einä	eissa	eissä	eista	eistä	eihin	eilla	eillä	eilta	eiltä	eille	eitta	eittä	ein
+	n	a	ksi	na	ssa	sta	yn	lla	lta	lle	tta	t	jen	ja	iksi	ina	issa	ista	ihin	illa	ilta	ille	itta	in
 ki	gin	kia	giksi	kina	gissa	gista	kiin	gilla	gilta	gille	gitta	git	kien	keja	geiksi	keina	geissa	geista	keihin	geilla	geilta	geille	geitta	gein	gen	kea	geksi	kena	gessa	gesta	keen	gella	gelta	gelle	getta	get
 	n	tä	ksi	nä	ssä	stä	hen	llä	ltä	lle	ttä	t	iden	itä	iksi	inä	issä	istä	ihin	illä	iltä	ille	ittä	in
 e	en	etä	eksi	enä	essä	estä	eseen	ehen	ellä	eltä	elle	että	et	iden	itten	itä	iksi	inä	issä	istä	isiin	ihin	illä	iltä	ille	ittä	in
@@ -172,17 +166,14 @@ i	in	iä	iksi	inä	issä	istä	iin	illä	iltä	ille	ittä	it	ien	eiden	eitten	ei
 ti	in	tiä	iksi	tinä	issä	istä	tiin	illä	iltä	ille	ittä	it	tien	tejä	eiksi	teinä	eissä	eistä	teihin	eillä	eiltä	eille	eittä	ein	en	teä	eksi	tenä	essä	estä	teen	ellä	eltä	elle	että	et
 ta	an	si	aisi	tkoon	nnut	ttiin
 s	ksen	stä	kseksi	ksenä	ksessä	ksestä	kseen	ksellä	kseltä	kselle	ksettä	kset	sten	ksien	ksiä	ksiksi	ksinä	ksissä	ksistä	ksiin	ksillä	ksiltä	ksille	ksittä	ksin
-	in	ia	iä	iksi	ina	inä	issa	issä	ista	istä	iin	illa	illä	ilta	iltä	ille	itta	ittä	it	ien	eja	ejä	eiksi	eina	einä	eissa	eissä	eista	eistä	eihin	eilla	eillä	eilta	eiltä	eille	eitta	eittä	ein
 	n	ta	ksi	na	ssa	sta	hen	lla	lta	lle	tta	t	iden	ita	iksi	ina	issa	ista	ihin	illa	ilta	ille	itta	in
 ki	in	kiä	iksi	kinä	issä	istä	kiin	illä	iltä	ille	ittä	it	kien	kejä	eiksi	keinä	eissä	eistä	keihin	eillä	eiltä	eille	eittä	ein	en	keä	eksi	kenä	essä	estä	keen	ellä	eltä	elle	että	et
-s	den	ttä	deksi	tenä	dessä	destä	teen	dellä	deltä	delle	dettä	det	ksien	ksiä	ksiksi	ksinä	ksissä	ksistä	ksiin	ksillä	ksiltä	ksille	ksittä	ksin
 ä	än	ää	äksi	änä	ässä	ästä	ään	ällä	ältä	älle	ättä	ät	ien	äin	iä	iksi	inä	issä	istä	iin	illä	iltä	ille	ittä	in	ätä	öiden	öitten
 	in	iä	iksi	inä	issä	istä	iin	illä	iltä	ille	ittä	it	ien	ejä	eiksi	einä	eissä	eistä	eihin	eillä	eiltä	eille	eittä	ein
 ata	taan	tasi	taisi	atkoon	annut	attiin
 	n	ä	ksi	nä	ssä	stä	yn	llä	ltä	lle	ttä	t	jen	jä	iksi	inä	issä	istä	ihin	illä	iltä	ille	ittä	in
 	n	ta	ksi	na	ssa	sta	hun	lla	lta	lle	tta	t	iden	ita	iksi	ina	issa	ista	ihin	illa	ilta	ille	itta	in
-	n	ta	tä	ksi	na	nä	ssa	ssä	sta	stä	hyn	lla	llä	lta	ltä	lle	tta	ttä	t	iden	ita	itä	iksi	ina	inä	issa	issä	ista	istä	ihin	illa	illä	ilta	iltä	ille	itta	ittä	in	hin
-i	in	ia	iä	iksi	ina	inä	issa	issä	ista	istä	iin	illa	illä	ilta	iltä	ille	itta	ittä	it	ien	eiden	eitten	eita	eitä	eja	ejä	eiksi	eina	einä	eissa	eissä	eista	eistä	eihin	eilla	eillä	eilta	eiltä	eille	eitta	eittä	ein
+	n	ta	ksi	na	ssa	sta	lla	lta	lle	tta	t	iden	ita	iksi	ina	issa	ista	ihin	illa	ilta	ille	itta	in	hin	hyn
 nen	sen	seksi	senä	sessä	sestä	seen	sellä	seltä	selle	settä	set	sten	sien	siä	siksi	sinä	sissä	sistä	siin	sillä	siltä	sille	sittä	sin
 dä	n		si	köön	nyt	diin
 ti	nin	tiä	niksi	tinä	nissä	nistä	tiin	nillä	niltä	nille	nittä	nit	tien	tejä	neiksi	teinä	neissä	neistä	teihin	neillä	neiltä	neille	neittä	nein	nen	teä	neksi	tenä	nessä	nestä	teen	nellä	neltä	nelle	nettä	net
@@ -248,7 +239,7 @@ i	en	ea	eksi	ena	essa	esta	een	ella	elta	elle	etta	et
 nen	sen	seksi	sena	sessa	sesta	seen	sella	selta	selle	setta	set	sten	sien	sia	siksi	sina	sissa	sista	silla	silta	sille	sitta	sin
 ki	gin	kiä	giksi	kinä	gissä	gistä	kiin	gillä	giltä	gille	gittä	git	kien	kejä	geiksi	keinä	geissä	geistä	keihin	geillä	geiltä	geille	geittä	gein	gen	keä	geksi	kenä	gessä	gestä	keen	gellä	geltä	gelle	gettä	get
 	a	na	on	jen	ja	ina	ihin
-y	yn	yta	ytä	yksi	yna	ynä	yssa	yssä	ysta	ystä	yseen	yhyn	ylla	yllä	ylta	yltä	ylle	ytta	yttä	yt	iden	itten	itä	iksi	inä	issä	istä	isiin	ihin	illä	iltä	ille	ittä	in
+	n	ta	ksi	na	ssa	sta	seen	hyn	lla	lta	lle	tta	t
 e	en	etä	eksi	enä	essä	estä	ehen	ellä	eltä	elle	että	et	iden	itten	itä	iksi	inä	issä	istä	ihin	illä	iltä	ille	ittä	in
 	n	ä	ksi	nä	ssä	stä	ön	llä	ltä	lle	ttä	t	jen	iden	itten	jä	itä	iksi	inä	issä	istä	ihin	illä	iltä	ille	ittä	in
 u	un	uta	uksi	una	ussa	usta	uhun	ulla	ulta	ulle	utta	ut	iden	itten	ita	iksi	ina	issa	ista	ihin	illa	ilta	ille	itta	in
@@ -293,7 +284,6 @@ po	on	poa	oksi	pona	ossa	osta	poon	olla	olta	olle	otta	ot	pojen	poja	oiksi	poina
 a	an	ata	aksi	ana	assa	asta	aseen	alla	alta	alle	atta	at	iden	itten	ita	iksi	ina	issa	ista	isiin	ihin	illa	ilta	ille	itta	in
 pia	pisi	pikoon	pinut	ittiin
 poa	on	poi	poisi	pokoon	ponut	ottiin
-ki	in	kia	kiä	iksi	kina	kinä	issa	issä	ista	istä	kiin	illa	illä	ilta	iltä	ille	itta	ittä	it	kien	keja	kejä	eiksi	keina	keinä	eissa	eissä	eista	eistä	keihin	eilla	eillä	eilta	eiltä	eille	eitta	eittä	ein	en	kea	keä	eksi	kena	kenä	essa	essä	esta	estä	keen	ella	ellä	elta	eltä	elle	etta	että	et
 ras	taan	rasta	taaksi	taana	taassa	taasta	taaseen	taalla	taalta	taalle	taatta	taat	taiden	taitten	taita	taiksi	taina	taissa	taista	taisiin	taihin	tailla	tailta	taille	taitta	tain
 nin	timen	ninta	timeksi	timena	timessa	timesta	timeen	timella	timelta	timelle	timetta	timet	timien	ninten	timia	timiksi	timina	timissa	timista	timiin	timilla	timilta	timille	timitta	timin
 ki	en	kea	eksi	kena	essa	esta	keen	ella	elta	elle	etta	et	kien	kia	kina	kiin
@@ -443,7 +433,7 @@ ka	kaa	aksi	kana	assa	kaan	alla	alta	alle	atta	at	kojen	kain	koja	oiksi	koina	oi
 ka	gan	kaa	gaksi	kana	gassa	gasta	kaan	galla	galta	galle	gatta	gat	kojen	kain	koja	goiksi	koina	goissa	goista	koihin	goilla	goilta	goille	goitta	goin
 pe	en	peä	eksi	penä	essä	estä	peen	ellä	eltä	elle	että	et	pejen	pein	pejä	eiksi	peinä	eissä	eistä	peihin	eillä	eiltä	eille	eittä	ein
 	n	tä	ksi	nä	ssä	stä	hyn	llä	ltä	lle	ttä	t	iden	itä	iksi	inä	issä	istä	ihin	illä	iltä	ille	ittä	in
-	n	ta	tä	ksi	na	nä	ssa	ssä	sta	stä	hyn	lla	llä	lta	ltä	lle	tta	ttä	t	iden	ita	itä	iksi	ina	inä	issa	issä	ista	istä	ihin	illa	illä	ilta	iltä	ille	itta	ittä	in
+	n	ta	ksi	na	ssa	sta	lla	lta	lle	tta	t	iden	ita	iksi	ina	issa	ista	ihin	illa	ilta	ille	itta	in
 to	don	toa	doksi	tona	dossa	toon	dolla	dolta	dolle	dotta	dot	tojen	toja	doiksi	toina	doissa	doista	toihin	doilla	doilta	doille	doitta	doin
 lella	telen	teli	telisi	lelkoon	lellut	leltiin
 ki	en	kea	eksi	kena	essa	esta	keen	ella	elta	elle	etta	et	kien	kia	iksi	kina	issa	ista	kiin	illa	ilta	ille	itta	in
@@ -562,8 +552,7 @@ ea	en	i	isi	ekoon	enut	ettiin
 i	eksi	ena	essa	esta	een	ella	elta	elle	etta	et	ien	ia	iksi	ina	issa	ista	iin	illa	ilta	ille	itta	in
 ti	dit	teja	deiksi	teina	deissa	deista	teihin	deilla	deilta	deille	deitta	dein	den	tea	deksi	tena	dessa	desta	teen	della	delta	delle	detta	det
 to	don	toa	doksi	tona	dossa	dosta	toon	dolla	dolta	dolle	dotta	dot	tojen	toja	doiksi	toina	doissa	doista	toihin	doilla	doilta	doille	doitta	doin	ton	toksi	tossa	tosta	tolla	tolta	tolle	totta	tot	toiksi	toissa	toista	toilla	toilta	toille	toitta	toin
-yt	een	ytta	yttä	eeksi	eenä	eessä	eestä	eeseen	eellä	eeltä	eelle	eettä	eet	eiden	eitten	eitä	eiksi	einä	eissä	eistä	eisiin	eihin	eillä	eiltä	eille	eittä	ein
-ty	yn	tya	tyä	yksi	tyna	tynä	yssa	yssä	ysta	ystä	tyyn	ylla	yllä	ylta	yltä	ylle	ytta	yttä	yt	tyjen	tyja	tyjä	yiksi	tyina	tyinä	yissa	yissä	yista	yistä	tyihin	yilla	yillä	yilta	yiltä	yille	yitta	yittä	yin
+ty	yn	tya	yksi	tyna	yssa	ysta	tyyn	ylla	ylta	ylle	ytta	yt	tyjen	tyja	yiksi	tyina	yissa	yista	tyihin	yilla	yilta	yille	yitta	yin
 pa	an	paa	aksi	pana	assa	asta	paan	alla	alta	alle	atta	at	pien	pain	pia	iksi	pina	issa	ista	piin	illa	ilta	ille	itta	in	pata	poiden	poitten
 kea	jen	ki	kisi	kekoon	kenut	jettiin
 ta	lan	taa	laksi	tana	lassa	lasta	lalla	lalta	lalle	latta	lat	tien	tain	tia	tina	tiin	tata	toiden	toitten
@@ -615,7 +604,6 @@ ty	dyn	tyä	dyksi	tynä	dyssä	dystä	tyyn	dyllä	dyltä	dylle	dyttä	tyjen	tyj�
 gäs	kään	gästä	kääksi	käänä	käässä	käästä	kääseen	käällä	käältä	käälle	käättä	käät	käiden	käitten	käitä	käiksi	käinä	käissä	käistä	käisiin	käihin	käillä	käiltä	käille	käittä	käin
 tä	än	tää	äksi	tänä	ässä	ästä	tään	ällä	ältä	älle	ättä	ät	täin	tätä	töiden	töitten
 ka	kaa	kana	kaan	kojen	kain	koja	oiksi	koina	oissa	oista	koihin	oilla	oilta	oille	oitta	oin
-	n	a	ä	ksi	na	nä	ssa	ssä	sta	stä	en	lla	llä	lta	ltä	lle	tta	ttä	t	jen	in	ja	jä	iksi	ina	inä	issa	issä	ista	istä	ihin	illa	illä	ilta	iltä	ille	itta	ittä
 je	keen	jetta	keeksi	keena	keessa	keesta	keeseen	keella	keelta	keelle	keetta	keet	keiden	keitten	keita	keiksi	keina	keissa	keista	keisiin	keihin	keilla	keilta	keille	keitta	kein
 ti	den	tea	deksi	tena	dessa	desta	teen	della	delta	delle	detta	det	tien	tia	diksi	tina	dissa	dista	tiin	dilla	dilta	dille	ditta	din	dit	teja	deiksi	teina	deissa	deista	teihin	deilla	deilta	deille	deitta	dein
 pi	man	massa	masta	paan	matta	mat	pien	pain	pia	miksi	pina	missa	mista	piin	milla	milta	mille	mitta	min
@@ -789,20 +777,20 @@ nar	tare	taren	tareen	narta	taretta	tareeksi	tareena	tareessa	tareesta	tareeseen
 ki	en	keä	eksi	kenä	essä	ellä	elle	että	et	kien	kiä	kinä	kiin
 koa	koi	koisi	kokoon	konut	gottiin
 i	in	iä	iksi	inä	issä	istä	iin	illä	iltä	ille	ittä	it	ien	ejä	eiksi	einä	eissä	eistä	eihin	eillä	eiltä	eille	eittä	ein	en	eä	eksi	enä	essä	estä	een	ellä	eltä	elle	et
-	n	a	ä	ksi	na	nä	ssa	ssä	sta	stä	yn	lla	llä	lta	ltä	lle	tta	ttä	t	jen	iden	itten	ja	jä	ita	itä	iksi	ina	inä	issa	issä	ista	istä	ihin	illa	illä	ilta	iltä	ille	itta	ittä	in
 ti	in	tiä	iksi	tinä	issä	istä	tiin	illä	iltä	ille	ittä	it	tien	tejä	teinä	teihin	en	teä	eksi	tenä	essä	estä	teen	ellä	eltä	elle	että	et
 to	don	toa	doksi	tona	dossa	dosta	toon	dolla	dolta	dolle	dotta	tojen	toja	doiksi	toina	doissa	doista	toihin	doilla	doilta	doille	doitta	doin
 tää	dän	ti	täisi	täköön	tänyt
 ika	jan	ikaa	jaksi	ikana	jassa	jasta	ikaan	jalla	jalta	jalle	jatta	jat	ikien	ikain	ikia	jiksi	ikina	jissa	jista	ikiin	jilla	jilta	jille	jitta	jin	ikata	ikoiden	ikoitten
 a		si	koon	nut
+	ta
 ata	kaan	kasi	kaisi	atkoon	annut	attiin	asi	aisi
 a	aa	ana	ien	ain	ia	ina	iin	ata	oiden	oitten
 o	on	ota	oksi	ona	ossa	osta	oseen	ohon	olla	olta	olle	otta	ot	iden	itten	ita	iksi	ina	issa	ista	isiin	ihin	illa	ilta	ille	itta	in
-pi	in	pia	piä	iksi	pina	pinä	issa	issä	ista	istä	piin	illa	illä	ilta	iltä	ille	itta	ittä	it	pien	peja	pejä	eiksi	peina	peinä	eissa	eissä	eista	eistä	peihin	eilla	eillä	eilta	eiltä	eille	eitta	eittä	ein	en	pea	peä	eksi	pena	penä	essa	essä	esta	estä	peen	ella	ellä	elta	eltä	elle	etta	että	et
 pia	pi	pisi	pikoon	pinut	ittiin
 si	nen	tta	neksi	tena	nessa	nesta	teen	nella	nelta	nelle	netta	net	sien	tten	sia	siksi	sina	sissa	sista	siin	silla	silta	sille	sitta	sin
 pa	an	paa	aksi	pana	assa	asta	alla	alta	alle	atta	at	pien	pain	pia	pina	piin	pata	poiden	poitten
 o	on	ota	oksi	ona	ossa	osta	oseen	olla	olta	olle	otta	ot	ita	iksi	ina	issa	ista	isiin	ihin	illa	ilta	ille	itta	in
+	n	a	ksi	na	ssa	sta	lla	lta	lle	tta	t	jen	iden	itten	ja	ita	iksi	ina	issa	ista	ihin	illa	ilta	ille	itta	in
 a	n	si	koon	nut	ttiin
 ti	din	tia	diksi	tina	dissa	dista	tiin	dilla	dilta	dille	ditta	dit	tien	teja	deiksi	deissa	deista	deilla	deilta	deille	deitta	dein	den	tea	deksi	tena	dessa	desta	della	delta	delle	det
 in	kimen	inta	kimeksi	kimena	kimessa	kimesta	kimeen	kimella	kimelta	kimelle	kimetta	kimet	kimien	inten	kimia	kimiksi	kimina	kimissa	kimista	kimiin	kimilla	kimilta	kimille	kimitta	kimin
@@ -814,7 +802,6 @@ a	an	aa	aksi	ana	assa	asta	aan	alla	alta	alle	atta	at	ien	ain	ia	iksi	ina	issa	i
 i	en	ta	ena	essa	ella	elta	elle	etta	et	ten
 kaa	an	ki	kaisi	kakoon	kanut	ettiin
 	na	t
-de	teen	detta	dettä	teeksi	teena	teenä	teessa	teessä	teesta	teestä	teeseen	teella	teellä	teelta	teeltä	teelle	teetta	teettä	teet	teiden	teitten	teita	teitä	teiksi	teina	teinä	teissa	teissä	teista	teistä	teisiin	teihin	teilla	teillä	teilta	teiltä	teille	teitta	teittä	tein
 to	on	toa	oksi	tona	ossa	osta	toon	olla	olta	olle	otta	ot	tojen	toja	oiksi	toina	oissa	oista	toihin	oilta	oille	oitta	oin
 u	un	uta	uksi	una	ussa	usta	uhun	ulla	ulta	ulle	utta	ut	iden	itten	ita	iksi	ina	issa	ihin	illa	ilta	ille	itta
 kä	än	kää	äksi	känä	ässä	ästä	kään	ällä	ältä	älle	ättä	ät	kien	käin	iksi	kinä	issä	istä	kiin	illä	iltä	ille	ittä	in	kätä	köiden	köitten
