@@ -169,7 +169,7 @@ if (typeof document !== 'undefined') {
     button.className = 'copy';
     button.title = 'Kopioi';
     button.setAttribute('aria-label', 'Kopioi');
-    button.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>';
+    button.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V7a2 2 0 0 1 2-2h8"/></svg>';
     button.addEventListener('click', async () => {
       try {
         await navigator.clipboard.writeText(getText());
