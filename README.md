@@ -4,7 +4,9 @@ Taivutin on suomen kielen sanoja taivuttava salasanageneraattori.
 
 ## Käyttö
 
-`python taivutin.py [sanojen määrä]`
+`python taivutin.py [sanojen määrä] [-w wiktionary|kotus]`
+
+Oletuksena käytetään Wikisanakirjan sanalistaa. Kotuksen sanalistan saa käyttöön valitsimella `-w kotus`.
 
 ## Lisenssit
 
