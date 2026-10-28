@@ -8,6 +8,8 @@ Taivutin on suomen kielen sanoja taivuttava salasanageneraattori.
 
 Oletuksena käytetään Wikisanakirjan sanalistaa. Kotuksen sanalistan saa käyttöön valitsimella `-w kotus`.
 
+Selaimessa toimiva versio on haarassa [web](https://github.com/indigane/taivutin/tree/web) ja julkaistuna osoitteessa [indigane.github.io/taivutin](https://indigane.github.io/taivutin/).
+
 ## Lisenssit
 
 ### Wikisanakirja
