@@ -4,11 +4,13 @@
 // Reads the same data files as taivutin.py: a list of partial words with an
 // index into a shared table of inflection endings.
 
+// In order of preference; the first one is the default.
 const WORDLISTS = {
-  wiktionary: { name: 'Wikisanakirja', files: ['data/sanapalat.txt', 'data/taivutuspalat.txt'] },
-  kotus: { name: 'Kotus', files: ['data/kotus-sanapalat.txt', 'data/kotus-taivutuspalat.txt'] },
+  kotuskarsittu: { name: 'Kotus (karsittu)', files: ['data/kotuskarsittu-sanapalat.txt', 'data/kotuskarsittu-taivutuspalat.txt'] },
+  kotusfull: { name: 'Kotus (täysi)', files: ['data/kotusfull-sanapalat.txt', 'data/kotusfull-taivutuspalat.txt'] },
+  wikisanakirja: { name: 'Wikisanakirja', files: ['data/wikisanakirja-sanapalat.txt', 'data/wikisanakirja-taivutuspalat.txt'] },
 };
-const DEFAULT_WORDLIST = 'wiktionary';
+const DEFAULT_WORDLIST = Object.keys(WORDLISTS)[0];
 
 class Wordlist {
   constructor(wordsText, inflectionsText) {
