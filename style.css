@@ -5,6 +5,7 @@
   --border: color-mix(in srgb, currentColor 30%, transparent);
   --subtle: color-mix(in srgb, currentColor 8%, transparent);
   --accent: color-mix(in srgb, currentColor 16%, transparent);
+  --divider: color-mix(in srgb, currentColor 12%, transparent);
 }
 
 body {
@@ -167,7 +168,7 @@ form {
 }
 
 .passwords li + li {
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--divider);
 }
 
 .password {
